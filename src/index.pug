@@ -1,0 +1,212 @@
+extends ./pages/_layout.pug
+block append title
+	title 閃耀閃炫 閃亮回歸！
+
+block append content
+	.section#mainkv
+		img.bg(src="./webroot/images/bg_kv.jpg" alt="")
+	.section#info
+		.tab-title
+			.wrapper
+				a.sale(href="#gash")
+					img.text(src="./webroot/images/btn-text_01.png", alt="")
+					img(src="./webroot/images/btn-spacer.gif", alt="")
+				a(href="#seven")
+					img.text(src="./webroot/images/btn-text_02.png", alt="")
+					img(src="./webroot/images/btn-spacer.gif", alt="")
+				a(href="#momo")
+					img.text(src="./webroot/images/btn-text_03.png", alt="")
+					img(src="./webroot/images/btn-spacer.gif", alt="")
+		.wrapper
+			.tab-wrapper
+				.tab-cont#gash
+					.contBox
+						.slogan.red 此時此刻商城最優惠的選擇沒有之一
+						ul
+							li
+								span.title | 活動時間 |
+								span.cont
+									| 2021/2/10 0:00 
+									| - 
+									| 2021/2/23 23:59 
+							li
+								span.title | 活動地區 |
+								span.cont 台灣/港澳
+							li
+								span.title | 活動辦法 |
+								span.cont 
+									| 前往
+									span.yellow GASH台/港商城
+									| 於活動商品頁輸入優惠碼可立即享專屬折扣
+							li
+								span.title | 活動商品 |
+								span.cont 《新楓之谷》專用卡2700點 
+							li
+								span.title | 商品派發 |
+								span.cont 購買完成後點數序號將透過購買時填寫的email派發
+							li
+								span.title | 優惠碼使用限制 |
+								span.cont.yellow 每個帳號限用一次
+						.infoBox.bg-blue
+							.imgBox
+								img(src="./webroot/images/img-01.png", alt="")
+								a(href="https://bit.ly/2KDaXZQ", target="_blank") 前往購買
+							.desc.yellow 台灣GASH商城優惠碼：MSAWAKETW
+
+						.infoBox.bg-blue
+							.imgBox
+								img(src="./webroot/images/img-02.png", alt="")
+								a(href="https://bit.ly/3oayX4k", target="_blank") 前往購買
+							.desc.yellow 香港GASH商城優惠碼：MSAWAKEHK
+
+
+				.tab-cont#seven
+					.contBox
+						.slogan.red 新年新氣象，快來試試你的好手氣
+						ul
+							li
+								span.title | 活動時間 |
+								span.cont
+									| 2021/2/10 0:00
+									| - 
+									| 2021/2/23 23:59 
+							li
+								span.title | 活動地區 |
+								span.cont 台灣
+							li
+								span.title | 活動辦法 |
+								span.cont 
+									| 前往全台
+									span.yellow 7-ELEVEN
+									| 購買活動商品，並成功儲值至電腦版
+									a(href="http://bit.ly/2LKPuie", target="_blank") 《遊戲橘子官網》
+									| ，累積1080元即可獲得抽抽樂抽獎券*1 
+									br
+									span.yellow ※透過beanfun! 手機版儲值，請至抽抽樂網頁右上角【序號補登】進行手機號碼補綁定
+							li
+								span.title | 注意事項 |
+								span.cont
+									| 抽獎前需驗證手機號碼，請輸入儲值時填寫的手機號碼若儲值時未輸入手機號碼，可於抽抽樂網頁右上角【序號補登】進行手機號碼補綁定活動於2021/02/23 23:59:59結束，請於活動結束前完成補登作業方能參加抽獎活動
+
+						.infoBox.bg-blue
+							.desc 購買活動商品
+							.imgBox
+								img(src="./webroot/images/img-03.jpg", alt="")
+								img(src="./webroot/images/img-04.jpg", alt="")
+							.desc 新楓之谷專用卡2700點、新楓之谷專用卡1080點、GASH點數
+
+						.infoBox.bg-blue.label
+							.desc 獎勵內容
+							.imgBox
+								img(src="./webroot/images/img-05.png", alt="")
+							.desc GASH500點、GASH150點、GASH100點、GASH50點
+						ul
+							li
+								span.title | 獎勵派發 |
+								span.cont
+									| 至
+									a(href="http://bit.ly/397WTB7", target="_blank") GASH抽抽樂網頁
+									| 抽獎，抽獎完成即可獲得獎勵序號
+
+				.tab-cont#momo
+					.contBox
+						ul
+							li
+								span.title | 活動時間 |
+								span.cont
+									| 2021/2/12 0:00 
+									| - 
+									| 2021/2/14 23:59 
+							li
+								span.title | 活動地區 |
+								span.cont 台灣
+							li
+								span.title | 活動辦法 |
+								span.cont 至momo購物網購買活動商品享97折回饋
+							li
+								span.title | 活動商品 |
+								span.cont 新楓之谷5000點實體卡 
+							li
+								span.title | 商品派發 |
+								span.cont 購買完成將寄送至輸入之地址
+						.infoWrapper
+							.imgBox
+								img(src="./webroot/images/img-05.jpg", alt="")
+							.imgBox
+								img(src="./webroot/images/img-06.jpg", alt="")
+								a(href="http://bit.ly/3bZt5rW", target="_blank") 數量有限要買要快＞
+
+	.section#note
+		.wrapper
+			ul
+				li.dot 《專用卡/ GASH點數》
+				li 
+					| 前往
+					a(href="http://bit.ly/2LKPuie", target="_blank") 遊戲橘子官網
+					img.arr(src="./webroot/images/icon-arrow.png")
+					| 登入後點選右下角【儲值與購點】
+					img.arr(src="./webroot/images/icon-arrow.png")
+					| 點選【點數、禮物卡儲值】
+					img.arr(src="./webroot/images/icon-arrow.png")
+					| 輸入點數序號與手機號碼
+					img.arr(src="./webroot/images/icon-arrow.png")
+					| 完成儲值囉！
+				li 
+					| 台灣區儲值教學：
+					a(href="http://bit.ly/3c0Mxod", target="_blank") 點我
+					span.red 手機版儲值要參加抽抽樂活動請至
+					a(href="http://bit.ly/397WTB7", target="_blank") 抽抽樂網頁
+					span.red 進行【序號補登】
+				li
+					| 港澳區儲值教學：
+					a(href="https://tw.gashpoint.com/games/article/7172?utm_source=event&utm_medium=post&utm_campaign=ms_specialsale_20210210&utm_content=5147_SC", target="_blank") 點我
+				li
+					| 優惠碼使用教學：
+					a(href="https://tw.gashpoint.com/games/article/7928?utm_source=event&utm_medium=post&utm_campaign=ms_specialsale_20210210&utm_content=5147_SC", target="_blank") 點我
+			ul
+				li.dot
+					| 抽抽樂活動辦法：
+					img.logo(src="./webroot/images/logo-seven.png")
+				li
+					| 至抽抽樂網站點選【新楓之谷活動】
+					img.arr(src="./webroot/images/icon-arrow.png")
+					| 輸入與儲值頁面相同支手機號碼
+					img.arr(src="./webroot/images/icon-arrow.png")
+					| 查看累積金額與抽獎券數量
+					img.arr(src="./webroot/images/icon-arrow.png")
+					| 點選立即抽獎
+					img.arr(src="./webroot/images/icon-arrow.png")
+					| 點選開始抽獎
+					img.arr(src="./webroot/images/icon-arrow.png")
+					span.bold 抽獎完成顯示獎項名稱與獎項序號
+				li
+					| 抽抽樂教學：
+					a(href="https://bit.ly/360VnOU", target="_blank") 點我
+			ul
+				li.dot 《GASH點數》兌換期限：
+				li.star 兌換期限：2021/3/31  23:59
+				li.star
+					| 兌換限制：限儲
+					a(href="http://bit.ly/2LKPuie", target="_blank") 遊戲橘子官網
+					| ，每個遊戲帳號無兌換組數上限，一組點數序號僅能使用一次
+			ul
+				li.dot 其他注意事項：
+				li.star 抽抽樂活動僅限從7-ELEVEN購買專用卡 / 點數卡
+				li.star
+					| 本活動獲得的GASH點數獎勵，僅能使用於《
+					a(href="http://bit.ly/2LKPuie", target="_blank") 遊戲橘子官網
+					| 》，無法折換現金或等值商品
+				li.star 玩家如因個人因素儲值失敗、活動資格不符，無法正常獲得獎勵，將無法額外進行補發獎勵
+				li.star
+					| 官方將保留變更或終止本活動時間、內容之權利，詳細活動規則、獎勵及異動說明均以官網最新公告為準，請玩家密切留意GASH官網
+					a(href="https://tw.gashpoint.com/games/article/7937?utm_source=event&utm_medium=post&utm_campaign=ms_specialsale_20210210&utm_content=5147_SC", target="_blank") 公告訊息
+				li.star 活動結束時間以伺服器時間為準，請玩家避免於活動截止時間前夕進行儲值以免權益受損
+				li.star
+					| 如有GASH點數購買或使用上的相關疑問，請聯絡
+					a(href="http://tw.gashpoint.com/Help/HelpB2C?utm_source=event&utm_medium=post&utm_campaign=ms_specialsale_20210210&utm_content=5147_SC", target="_blank") 樂點線上客服
+
+
+	
+	.section#copyright 
+		| &copy; 
+		| 2021 GASH POINT Co., Ltd. All Rights Reserved.

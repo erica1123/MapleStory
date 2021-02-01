@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+html, body {
+  min-height: 100%;
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 14px;
+  font-weight: 500; }
+  body ul, body li, body p, body div {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  body ul {
+    font-size: 0; }
+  body img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: block;
+    margin: 0 auto; }
+  body .pc {
+    display: none; }
+  body .mb {
+    display: block; }
+  body a {
+    display: block;
+    color: blue;
+    text-decoration: underline; }
+  body .red {
+    color: #c30d23; }
+  body .yellow {
+    color: #f8e72b; }
+
+.section {
+  margin: 0 auto;
+  position: relative;
+  z-index: 1; }
+
+.wrapper {
+  margin: 0 auto;
+  position: relative;
+  z-index: 1; }
+
+#mainkv {
+  position: relative;
+  z-index: 1; }
+
+#info {
+  background: #804c4c; }
+
+.tab-title {
+  background: url(../images/bg_nav.png) repeat-x 0 0;
+  background-size: auto 100%;
+  padding: 5% 2%; }
+  .tab-title .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .tab-title a {
+    background: url(../images/btn.png) no-repeat 50% 0;
+    background-size: auto 100%;
+    position: relative;
+    padding: 0 1%; }
+    .tab-title a.active {
+      background: url(../images/btn-active.png) no-repeat 50% 0;
+      background-size: auto 100%; }
+    .tab-title a.sale::before {
+      content: '';
+      display: block;
+      width: 10vw;
+      height: 10vw;
+      background: url(../images/ico-stamp.png) no-repeat 50% 0;
+      background-size: auto 100%;
+      position: absolute;
+      left: -5%;
+      top: -50%;
+      z-index: 2; }
+  .tab-title .text {
+    position: absolute;
+    width: auto;
+    height: 50%;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -55%);
+        -ms-transform: translate(-50%, -55%);
+            transform: translate(-50%, -55%); }
+
+.tab-wrapper {
+  padding: 10% 5%; }
+
+.tab-cont {
+  display: none;
+  border: 1px solid #000;
+  background: #4fb3ff;
+  border-radius: 20px;
+  position: relative; }
+  .tab-cont.active {
+    display: block; }
+
+.contBox {
+  padding: 3%;
+  border-radius: 20px;
+  border: 5px solid #69cbff; }
+  .contBox .slogan {
+    text-align: center;
+    margin-bottom: 3%; }
+  .contBox ul {
+    color: #FFF;
+    font-size: 1em; }
+  .contBox li + li {
+    margin-top: 2%; }
+  .contBox li span {
+    display: inline-block;
+    vertical-align: top;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.8); }
+  .contBox li a {
+    display: inline-block;
+    text-shadow: 0 0 0 transparent; }
+  .contBox .title {
+    max-width: 50%;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap; }
+  .contBox .cont {
+    max-width: calc(75% - 10px);
+    padding: 0 0 0 10px; }
+
+.infoBox {
+  padding: 3% 3%;
+  margin-top: 5%;
+  border-radius: 15px;
+  position: relative; }
+  .infoBox.bg-blue {
+    background: #1a6fb0; }
+  .infoBox .imgBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .infoBox.label::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/ico-label.png) no-repeat 0 0;
+    background-size: 100% auto;
+    position: absolute;
+    top: -3px;
+    left: -3px; }
+
+#gash img {
+  width: 73%;
+  margin: 0; }
+
+#gash a {
+  background: #f8e72b;
+  color: #882e30;
+  border-radius: 50px;
+  border: 2px solid #882e30;
+  white-space: nowrap;
+  text-align: center;
+  padding: 1% 2%;
+  text-decoration: none; }
+
+#gash .desc {
+  margin-top: 2%; }
+
+#seven .desc {
+  text-align: center;
+  color: #FFF; }
+
+#seven .imgBox {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 2% auto; }
+
+#seven img {
+  width: 40%; }
+
+#seven .infoBox + .infoBox {
+  margin-bottom: 2%; }
+  #seven .infoBox + .infoBox img {
+    width: 100%; }
+
+#momo .infoWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 5%; }
+
+#momo .imgBox {
+  width: 46%; }
+
+#momo a {
+  text-align: center; }
+
+#note {
+  background: #FFF;
+  padding: 5%; }
+  #note ul {
+    font-size: 1em;
+    font-weight: 400; }
+    #note ul + ul {
+      margin-top: 5%; }
+  #note .dot, #note .star {
+    position: relative;
+    padding: 0 0 0 15px; }
+    #note .dot::before, #note .star::before {
+      content: '';
+      display: block;
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      left: 0;
+      top: 0.4em; }
+  #note .dot::before {
+    background: #000;
+    border-radius: 50%; }
+  #note .star::before {
+    background: url("../images/icon-star.png") no-repeat 0 0;
+    background-size: auto 100%; }
+  #note .red {
+    display: inline;
+    margin: 0 2px;
+    color: red; }
+  #note .bold {
+    font-weight: 700; }
+  #note .arr {
+    display: inline-block;
+    width: 14px;
+    vertical-align: middle;
+    margin: 0 0.2em; }
+  #note .logo {
+    width: 160px;
+    display: inline-block;
+    vertical-align: top; }
+  #note a {
+    display: inline-block;
+    margin: 0 0.2em; }
+
+#copyright {
+  text-align: center;
+  color: #b5b5b6;
+  padding: 20px 0;
+  background: #231815; }
