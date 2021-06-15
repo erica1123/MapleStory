@@ -44,7 +44,9 @@ input:focus, button:focus, textarea:focus {
 img {
   border: 0;
   outline: 0;
-  display: block; }
+  display: block;
+  width: 100%;
+  margin: 0 auto; }
 
 ul, li, ol {
   margin: 0;
