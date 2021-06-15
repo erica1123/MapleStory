@@ -1,0 +1,77 @@
+@import '../mixins/mixins'
+*
+  // outline: 1px solid red
+body
+  background: $bgColor
+  font-family: 'Noto Sans TC', sans-serif
+  font-size: 15px
+  font-weight: 400
+
+.container
+  width: 100%
+  max-width: 1280px
+
+.header
+  background: url('../../images/kv_bg.jpg') no-repeat top center
+  background-size: 100% auto
+  img
+    width: 100%
+  &-body
+    position: relative
+  &-footer
+    height: 8vw
+    background: url('../../images/kv_floor.png') repeat-x top center
+    background-size: auto 100%
+.castle
+  position: relative
+  z-index: 1
+
+.fireworks
+  position: absolute
+  +halign
+  top: 0
+  width: 100%
+  z-index: 0
+  +flex
+
+.acts
+  position: absolute
+  +halign
+  bottom: 0
+  width: 50%
+  z-index: 2
+  +flex(flex-end, baseline)
+  &-start
+    +relative(0)
+    +flex(flex-end, baseline)
+    .act:nth-child(2)
+      z-index: -1
+    .chat
+      width: 20vw
+  &-end
+    +relative(0)
+    +flex(flex-end, baseline)
+    padding-left: 11.6vw
+    .chat
+      width: 25vw
+      left: 52%
+  .chat
+    position: absolute
+    bottom: 100%
+    transform-origin: center bottom
+    animation: shake 0.8s infinite steps(2)
+  .act
+    width: auto
+    height: 10vw
+    transform-origin: center bottom
+    animation: shake 0.8s infinite steps(2)
+    & + .act
+      margin-left: -0.8vw
+    
+
+
+@keyframes shake
+	0%
+		transform: scale(1, 1)
+	100%
+		transform: scale(1, 1.03)
