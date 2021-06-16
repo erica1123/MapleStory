@@ -13,5 +13,3 @@ $(function () {
 		return false
 	})
 })
-
-//# sourceMappingURL=all.js.map
