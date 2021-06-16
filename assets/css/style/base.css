@@ -44,7 +44,9 @@ input:focus, button:focus, textarea:focus {
 img {
   border: 0;
   outline: 0;
-  display: block; }
+  display: block;
+  width: 100%;
+  margin: 0 auto; }
 
 ul, li, ol {
   margin: 0;
@@ -74,3 +76,5 @@ a {
     filter: alpha(opacity=100);
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     opacity: 1; } }
+
+/*# sourceMappingURL=base.css.map */
